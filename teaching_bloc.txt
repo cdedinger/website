@@ -1,0 +1,21 @@
+ <details class="course">
+  <summary>
+  <span class="course-title">Croissance économique : faits et théories</span>
+  <span class="course-meta">Bachelor · Université Paris Cité · Tutorial</span>
+  </summary>
+  <div class="course-body">
+  <p><strong>Abstract.</strong> L’objectif de cet enseignement est de fournir une compr´ehension factuelle (histoire, mesures et indicateurs tel que le PIB) au phénomène de la croissance économique. D’un point de vue théorique, le modèle de croissance de Robert Solow est étudié et discuté avec les étudiant·e·s.</p>
+  
+
+  </div>
+  </details>
+
+<details class="course">
+  <summary>
+  <span class="course-title"> Equilibre macroéconomique</span>
+  <span class="course-meta">Bachelor 2· Université Paris Cité · Tutorial</span>
+  </summary>
+  <div class="course-body">
+  <p><strong>Abstract.</strong> Cet enseignement aborde les différents modèles (par ex. modèle IS-LM ou modèle WS-PS) mobilisés selon les écoles de pensée -
+néoclassique, keynésienne et néo-keynésienne - pour interpréter les phénomènes macroéconomiques, ainsi que les politiques que chaque école favorise pour en réduire les déséquilibres.</p>
+  

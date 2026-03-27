@@ -1,0 +1,73 @@
+---
+title: "Research"
+lang: en
+toc: false
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+---
+
+## Research interests & methods
+
+- Socio-ecological transitions 
+- Compromises and environmental governance dynamics
+- Productive models and actor practices in ecological transformation
+- Environmental justice
+- **Mixed methods:** Multivariate quantitative analysis; Discourse analysis; Q methodology; Social network analysis; PQR analysis
+
+---
+
+## Doctoral thesis
+
+**Dedinger, C. (2024).**  
+*The future of wetlands in the face of global changes : heritage analysis of socio-ecological compromises in the Brouage and Fier d’Ars marshes (Charente-Maritime, France).* <br> University of Bordeaux.<br> 
+
+<a class="hero-pill pdf-outline" href="https://theses.hal.science/tel-04822967v1/document" target="_blank" rel="noopener" aria-label="Télécharger la thèse (pdf)">
+  <i class="fa-solid fa-file-pdf" aria-hidden="true"></i>&nbsp; Download here <span class="pdf-small"></span>
+</a>
+
+---
+
+## Publications
+
+**Chazal, C., Dedinger, C., Duterme, T., Grassart, C., Hobeika, P., Lacoste, L., ... & Wajnsztok, H. (2025).**  
+   *Comptes rendus de thèses soutenues.* Revue Française de Socio‑Économie, 34(1), 279–288. 
+   
+<a class="hero-pill pdf-outline" href="figs/RFSE.pdf" target="_blank" rel="noopener" aria-label="Télécharger la thèse (pdf)">
+  <i class="fa-solid fa-file-pdf" aria-hidden="true"></i>&nbsp; Download here <span class="pdf-small"></span>
+</a>
+
+**Dedinger, C. (2025).**  
+   *Usages du marais et compromis patrimoniaux*, in M. Augeron (dir.), *Brouage et ses marais : Des origines à nos jours*, La Geste, p. 306–311.  
+
+**Dedinger, C., Boschet, C., Cazals, C., Long, N., & Rivaud, A. (2023).**  
+   *Compromis et patrimoine : les zones humides rétro‑littorales face aux changements globaux.* Développement durable et territoires, 14(1).  
+   
+  <a class="hero-pill pdf-outline" href="https://journals.openedition.org/developpementdurable/22214" target="_blank" rel="noopener" aria-label="Télécharger la thèse (pdf)">
+  <i class="fa-solid fa-file-pdf" aria-hidden="true"></i>&nbsp; Download here <span class="pdf-small"></span>
+</a>
+   
+---
+
+## Working Papers
+
+**An interdisciplinary interpretative framework for innovative classification of coastal marsh heritage**  
+with Nathalie Long (LIENSs) and al.  
+*Stage: Submitted*
+
+---
+
+## Work in Progress
+
+<p><strong>OpenQ: An open-source application for Q methodology research</strong><br> with Julien Vastenaekels (CRIEG-REGARDS)<br> <em>Stage: Writing</em></p>
+
+**Can heritage analysis reveal pathways to a just transition?**  
+with Clarisse Cazals (ETTIS, INRAE) & Audrey Rivaud (UMR Art-Dev)  
+*Stage: Writing*
+
+<p><strong>Governing rewilding through socio-ecological compromises: Insights from a Finnish case study</strong><br> with Julien Vastenaekels (CRIEG-REGARDS)<br> <em>Stage: Data collection</em></p>
+
+**The Hidden Costs of Excellence: The Carbon Footprint of Top 5 Economics Journals**  
+with Etienne Dagorn (LEM)  
+*Stage: Data collection*

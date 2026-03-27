@@ -1,0 +1,717 @@
+/* ══════════════════════════════════════════════════════════
+   styles.css — Clémence Dedinger – Academic Personal Website
+   ══════════════════════════════════════════════════════════ */
+
+/* ── Variables ── */
+:root {
+  --olive: #556B2F;
+  --olive-light: #6B8E23;
+  --blue-header: #2C3E50;
+  --blue-light: #34495E;
+  --text-dark: #2D2D2D;
+  --text-muted: #5A5A5A;
+  --bg-light: #FAFAF8;
+  --white: #FFFFFF;
+}
+
+/* ── Global ── */
+body {
+  font-family: 'Source Sans Pro', 'Segoe UI', sans-serif;
+  color: var(--text-dark);
+  background-color: var(--bg-light);
+  line-height: 1.7;
+}
+
+/* ══════════════════════════════════════════════════════════
+   NAVBAR
+   ══════════════════════════════════════════════════════════ */
+
+.navbar {
+  background-color: var(--blue-header);
+  border-bottom: 3px solid var(--olive);
+  padding: 0.6rem 1.5rem;
+}
+
+.navbar-brand {
+  font-size: 1.5rem !important;
+  font-weight: 700;
+  color: var(--white);
+  letter-spacing: 0.02em;
+}
+
+.navbar-brand:hover {
+  color: var(--olive-light);
+}
+
+.navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.2s ease, border-color 0.2s ease;
+  padding-bottom: 0.3rem;
+
+  text-decoration: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  background-image: none !important;
+
+  border-bottom: 2px solid transparent;
+  display: inline-block;
+  box-sizing: border-box; / s'assurer que la bordure est comptée sans surprise */
+}
+
+/* Hover : seule la ligne verte doit apparaître */
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  color: var(--white);
+  border-bottom: 2px solid var(--olive-light);
+  text-decoration: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  background-image: none !important;
+}
+
+/* État actif (page courante) : bordure olive plus foncée */
+.navbar-nav .nav-link.active {
+  color: var(--white);
+  border-bottom: 2px solid var(--olive);
+  text-decoration: none !important;
+}
+
+/* Icônes navbar (enveloppe, recherche) */
+.navbar-nav .nav-link i,
+.navbar-nav .nav-link .bi {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1.05rem;
+}
+
+.navbar-nav .nav-link:hover i,
+.navbar-nav .nav-link:hover .bi {
+  color: var(--white);
+}
+
+/* Hamburger menu (mobile) */
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.navbar-toggler-icon {
+  filter: brightness(2);
+}
+
+/* ══════════════════════════════════════════════════════════
+   HEADINGS
+   ══════════════════════════════════════════════════════════ */
+
+h1 {
+  color: var(--blue-header);
+  font-weight: 700;
+}
+
+h2 {
+  color: var(--olive);
+  font-weight: 700;
+  margin-top: 0.5rem;
+  margin-bottom: 0.8rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: var(--olive);
+  margin-top: 0.4rem;
+  border-radius: 2px;
+}
+
+h3 {
+  color: var(--blue-light);
+  font-weight: 600;
+}
+
+/* ✅ Fix propre du nom (prioritaire sur hero-text h2) */
+.hero-text h2.hero-name {
+  color: var(--blue-header);
+  font-weight: 700;
+  font-size: 2.4rem; 
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.hero-text h2.hero-name::after {
+  display: none;
+}
+
+/* ══════════════════════════════════════════════════════════
+   HERO SECTION
+   ══════════════════════════════════════════════════════════ */
+
+.hero {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-links-side {
+  position: absolute;
+  left: -150px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hero-main {
+  display: flex;
+  align-items: flex-start;
+  gap: 2.5rem;
+  padding: 1.2rem 0 1rem 1rem; 
+  flex: 1;
+  position: relative;
+}
+
+.hero-main::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 2.5rem;
+  height: calc(100% - 3.5rem);
+  width: 4px;
+  background: var(--olive);
+  border-radius: 2px;
+}
+
+.hero-photo {
+  margin-top: 60px; /* ajuste (ex: 8px, 12px…) */
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--olive);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  flex-shrink: 0;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 0;
+}
+
+.hero-text h1 {
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 0.2rem;
+  color: var(--blue-header);
+  text-align: left;
+}
+
+.hero-text h1::after {
+  display: none;
+}
+
+/* ✅ On applique le style seulement aux h2 qui NE sont PAS hero-name */
+.hero-text h2:not(.hero-name) {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--olive);
+  margin-bottom: 1rem;
+  margin-top: 0;
+  border-bottom: 2px solid var(--olive);
+  padding-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.hero-text h2::after {
+  display: none;
+}
+
+/* ── Hero links ── */
+
+.hero-links {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.8rem;
+}
+
+.hero-links-side .hero-pill,
+.hero-pill {
+  border: 1.5px solid var(--olive);
+  color: var(--olive);
+  background: transparent;
+  border-radius: 20px;
+  padding: 0.3rem 0.9rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.hero-pill:hover {
+  background-color: var(--olive);
+  color: var(--white);
+  text-decoration: none;
+}
+
+/* ── Hero bio ── */
+
+.hero-bio {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: var(--text-muted);
+  margin-top: 0.5rem;
+  text-align: justify !important;
+}
+
+.hero-bio strong {
+  color: var(--text-dark);
+}
+
+
+/* ══════════════════════════════════════════════════════════
+   RESEARCH TAGS (page d'accueil)
+   ══════════════════════════════════════════════════════════ */
+
+.research-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.tag {
+  background-color: rgba(85, 107, 47, 0.1);
+  color: var(--olive);
+  border: 1px solid var(--olive);
+  border-radius: 20px;
+  padding: 0.35rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.tag.methods {
+  background-color: rgba(44, 62, 80, 0.08);
+  color: var(--blue-header);
+  border-color: var(--blue-header);
+}
+
+/* ══════════════════════════════════════════════════════════
+   SEPARATORS
+   ══════════════════════════════════════════════════════════ */
+
+hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, var(--olive), transparent);
+  margin: 2rem 0;
+}
+
+/* ══════════════════════════════════════════════════════════
+   LINKS
+   ══════════════════════════════════════════════════════════ */
+
+a {
+  color: var(--olive);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--olive-light);
+  text-decoration: underline;
+}
+
+/* ══════════════════════════════════════════════════════════
+   DETAILS / ACCORDION (Teaching page)
+   ══════════════════════════════════════════════════════════ */
+
+details {
+  background: var(--white);
+  border: 1px solid #e0e0e0;
+  border-left: 4px solid var(--olive);
+  border-radius: 6px;
+  padding: 0.8rem 1.2rem;
+  margin-bottom: 0.8rem;
+  transition: box-shadow 0.2s ease;
+}
+
+details:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+details[open] {
+  border-left-color: var(--blue-header);
+}
+
+summary {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--text-dark);
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary::before {
+  content: "▸";
+  color: var(--olive);
+  font-size: 1rem;
+  transition: transform 0.2s ease;
+}
+
+details[open] summary::before {
+  content: "▾";
+  color: var(--blue-header);
+}
+
+details .details-content,
+details p,
+details ul {
+  margin-top: 0.6rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+details ul {
+  padding-left: 1.2rem;
+}
+
+details ul li {
+  margin-bottom: 0.3rem;
+}
+
+details p {
+  text-align: justify;
+  hyphens: auto;
+  overflow-wrap: break-word;
+  text-rendering: optimizeLegibility;
+}
+
+
+p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+p:last-child {
+  text-align: left;
+}
+
+/* ══════════════════════════════════════════════════════════
+   PUBLICATIONS (Research page)
+   ══════════════════════════════════════════════════════════ */
+
+.publication {
+  padding: 1rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.publication:last-child {
+  border-bottom: none;
+}
+
+.publication strong {
+  color: var(--text-dark);
+}
+
+.publication em {
+  color: var(--text-muted);
+}
+
+.publication .pub-status {
+  display: inline-block;
+  background-color: rgba(85, 107, 47, 0.1);
+  color: var(--olive);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.15rem 0.6rem;
+  border-radius: 12px;
+  margin-left: 0.4rem;
+}
+
+.publication .pub-status.submitted {
+  background-color: rgba(44, 62, 80, 0.08);
+  color: var(--blue-header);
+}
+
+.publication .pub-status.wip {
+  background-color: rgba(200, 160, 50, 0.12);
+  color: #8B7300;
+}
+
+/* ══════════════════════════════════════════════════════════
+   LISTS
+   ══════════════════════════════════════════════════════════ */
+
+ul {
+  padding-left: 1.4rem;
+}
+
+ul li {
+  margin-bottom: 0.4rem;
+}
+
+ul li strong {
+  color: var(--text-dark);
+}
+
+/* ══════════════════════════════════════════════════════════
+   BLOCKQUOTES (si utilisés pour citations/notes)
+   ══════════════════════════════════════════════════════════ */
+
+blockquote {
+  border-left: 4px solid var(--olive);
+  padding: 0.8rem 1.2rem;
+  margin: 1.5rem 0;
+  background-color: rgba(85, 107, 47, 0.04);
+  color: var(--text-muted);
+  font-style: italic;
+  border-radius: 0 6px 6px 0;
+}
+
+/* ══════════════════════════════════════════════════════════
+   FOOTER
+   ══════════════════════════════════════════════════════════ */
+
+.nav-footer {
+  background-color: var(--blue-header)  ;
+  color: rgba(255, 255, 255, 0.7)  ;
+  border-top: 3px solid var(--olive);
+  padding: 1rem;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.nav-footer a {
+  color: rgba(255, 255, 255, 0.85)  ;
+}
+
+.nav-footer a:hover {
+  color: var(--white)  ;
+}
+
+/* ══════════════════════════════════════════════════════════
+   CONTENT CONTAINER
+   ══════════════════════════════════════════════════════════ */
+
+.content {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* ══════════════════════════════════════════════════════════
+   SELECTION
+   ══════════════════════════════════════════════════════════ */
+
+::selection {
+  background-color: rgba(85, 107, 47, 0.2);
+  color: var(--text-dark);
+}
+
+/* ══════════════════════════════════════════════════════════
+   SCROLLBAR (optionnel, webkit)
+   ══════════════════════════════════════════════════════════ */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-light);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--olive);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--olive-light);
+}
+
+/* ══════════════════════════════════════════════════════════
+   RESPONSIVE
+   ══════════════════════════════════════════════════════════ */
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-left: none;
+    border-top: 4px solid var(--olive);
+    padding-left: 0;
+    padding-top: 1.5rem;
+  }
+
+  .hero-photo {
+    width: 140px;
+    height: 140px;
+  }
+
+  .hero-text h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero-links {
+    justify-content: center;
+  }
+
+  .hero-text h2 {
+    display: block;
+  }
+
+  .research-tags {
+    justify-content: center;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  details {
+    padding: 0.6rem 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-photo {
+    width: 120px;
+    height: 120px;
+  }
+
+  .hero-text h1 {
+    font-size: 1.4rem;
+  }
+
+  .hero-pill {
+    font-size: 0.78rem;
+    padding: 0.25rem 0.7rem;
+  }
+
+  .tag {
+    font-size: 0.78rem;
+    padding: 0.25rem 0.7rem;
+  }
+}
+
+/* === Fix bouton .hero-pill compact (empêche width:100% venant d'ailleurs) === */
+.hero-pill {
+  display: inline-flex !important;   /* ligne compacte (icône + texte) */
+  align-items: center !important;
+  white-space: nowrap !important;    /* empêche le texte de passer à la ligne */
+  width: auto !important;            /* annule width:100% si une règle externe l'impose */
+  max-width: 100% !important;        /* safe pour responsive */
+  box-sizing: border-box !important;
+  justify-content: flex-start !important;
+}
+
+/* si certains thèmes forcent a {display:block}, ciblons le lien concret : */
+.content a.hero-pill,
+.publication a.hero-pill,
+.article-content a.hero-pill {
+  display: inline-flex !important;
+  width: auto !important;
+}
+
+/* Limiter la largeur maximale (optionnel) : */
+.hero-pill {
+  max-width: 320px; /* ajuste selon le rendu que tu veux (ou supprime cette ligne) */
+}
+
+/* Conserver l'alignement de l'icône et réduire le padding si besoin */
+.hero-pill i,
+.hero-pill svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+/* ══════════════════════════════════════════════════════════
+   SCIENCE & SOCIETY PAGE
+   ══════════════════════════════════════════════════════════ */
+
+.society-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.society-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.2rem;
+}
+
+.society-item img {
+  width: 180px;       /* augmente la taille (ajuste si besoin) */
+  height: auto;
+  border: none;       /* enlève la bordure */
+  border-radius: 0;   /* enlève les coins arrondis */
+}
+
+.society-text h3 {
+  margin-top: 0;
+  margin-bottom: 0.3rem;
+}
+
+.society-text p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  text-align: justify;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .society-item {
+    flex-direction: column;
+  }
+
+  .society-item img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.content > p:first-of-type {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  margin-bottom: 1.5rem; /* Espace sous le paragraphe (ajustez si besoin) */
+}
+
+/*------------------------------------------------------------*/
+
+.image-credit {
+  font-size: 0.7rem; /* plus petit */
+  color: #777;
+  margin-top: 5px;
+}
+
+.hero-credit {
+  font-size: 0.8rem; /* plus petit */
+  color: #777;
+  margin-top: 5px;
+}

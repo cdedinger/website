@@ -1,0 +1,33 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Clémence Dedinger"
+  navbar:
+    title: false
+    left:
+      - href: index.qmd
+        text: Home
+        icon: house-door
+    right:
+      - href: index.qmd
+        text: About
+      - href: research.qmd
+        text: Research
+      - href: teaching.qmd
+        text: Teaching
+      - href: society.qmd
+        text: Science & Society
+
+format:
+  html:
+    theme:
+      - cosmo
+    css: custom.css
+    smooth-scroll: true
+    anchor-sections: false
+    include-in-header:
+      - text: |
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.4/css/academicons.min.css">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">

@@ -1,0 +1,55 @@
+---
+title: "Teaching"
+lang: en
+toc: false
+---
+
+<p class="justify">
+
+Since 2022, I have taught undergraduate (Years 1–3) and graduate courses (Master’s level) to diverse audiences (economics, engineering, and environmental studies students), in lectures, tutorials, and computer-based classes (over 330 teaching hours in total). My teaching covers both <strong>core economics courses</strong> and <strong>more specialized topics</strong>, with particular attention to socio-&shy;ecological issues and transitions. I combine theoretical foundations, empirical analysis, and critical discussion of public policies, while promoting a pluralist and reflexive approach to economics. 
+
+</p>
+
+---
+
+# Graduate Courses
+
+## Environmental and Ecological Economics 
+
+* <strong>Environmental Justice</strong> — Master’s level (Year 1), University of Paris Cité <br/>
+<em>Primary instructor</em>
+
+* <strong>Integrated Coastal Zone Management</strong> — Master’s level (Year 2), University of Bordeaux <br/>
+<em>Teaching assistant</em>
+
+# Undergraduate Courses
+
+## Macroeconomics and Economic Theory
+
+* <strong>Macroeconomics</strong> — Bachelor’s level (Year 1), University of Lille <br/>
+<em>Teaching assistant</em>
+
+* <strong>Macroeconomic Equilibrium and Policy</strong> — Bachelor’s level (Year 2), University of Paris Cité <br/>
+<em>Teaching assistant</em>
+
+* <strong>Economic Growth: Facts and Theories</strong> — Bachelor’s level (Year 3), University of Paris Cité <br/>
+<em>Teaching assistant</em>
+
+## Public Economics and Regulation  
+
+* <strong>Competition Policy and Regulation</strong> — Bachelor’s level (Year 1), University of Lille <br/>
+<em>Primary instructor</em>
+
+* <strong>Public and Welfare Economics</strong> — Bachelor’s level (Year 2), University of Paris Cité <br/>
+<em>Teaching assistant</em>
+
+## Quantitative Methods and Data Analysis  
+
+* <strong>Descriptive Statistics and Computing</strong> — Bachelor’s level (Year 1), University of Paris Cité <br/>
+<em>Teaching assistant</em>
+
+* <strong>Statistics for the Social Sciences</strong> — Bachelor’s level (Year 3), University of Lille <br/>
+<em>Primary instructor</em>
+
+* <strong>Advanced Quantitative Methods</strong> — Bachelor’s level (Year 3), University of Lille <br/>
+<em>Primary instructor</em>

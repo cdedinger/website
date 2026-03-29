@@ -18,7 +18,7 @@ title-block-style: none
       <h2 class="hero-name">Clémence Dedinger</h2>
       <h2>Postdoctoral Researcher</h2>
       <p class="hero-bio">
-        I am a postdoctoral researcher at CRIEG‑REGARDS (University of Reims Champagne‑Ardenne) in <strong>social‑ecological economics</strong>. I lead a research project funded by the Junior Professorship Chair “Economics of Ecological Transition and Bioeconomy” on the <strong>governance of renaturation</strong> in North Karelia (Finland). More broadly, I analyse <strong>socio‑ecological transitions</strong>  with a focus on governance, institutional change, and environmental justice.
+        I am a postdoctoral researcher at CRIEG‑REGARDS (University of Reims Champagne‑Ardenne) in <strong>social‑ecological economics</strong>. I lead a research project funded by the Junior Professorship Chair “Economics of Ecological Transition and Bioeconomy” on the <strong>governance of renaturation</strong> in North Karelia (Finland). More broadly, I analyse <strong>socio‑ecological transitions</strong>  with a focus on governance, institutional dynamics and actor practices.
       </p>
     </div>
   </div>
